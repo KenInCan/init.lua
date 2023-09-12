@@ -35,7 +35,6 @@ autocmd({"BufWritePre"}, {
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
-
--- run feline
-require('feline').setup()
-require('feline').winbar.setup()
+require('lualine').setup{
+options = { theme = 'horizon'},
+}
